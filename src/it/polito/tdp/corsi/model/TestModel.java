@@ -12,6 +12,16 @@ public class TestModel {
 		
 		for(Corso c: corsi)
 			System.out.println(c);
+		
+		int matricola = 146101;
+		String result = m.getNomeCognomeByMatricola(matricola);
+		System.out.println("matricola: " + matricola + " nome cognome: " + result);
+		
+		result = m.getNomeCognomeByMatricola(146102);
+		System.out.println("matricola: " + matricola + " nome cognome: " + result);
+		
+		result = m.getStatisticheFromCorsi();
+		System.out.println(result);
 	}
 
 }
